@@ -4,61 +4,163 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Nana Eddie — Linux, Automation, and a Career Switch in Progress</title>
-  <meta name="description" content="Nana Eddie (Redhateddie) — switching into tech from another field, working hands-on with Linux and learning DevOps, automation, and backend engineering." />
+  <title>nana@eddie:~ — linux, automation, in progress</title>
+  <meta
+    name="description"
+    content="Nana Eddie (Redhateddie) — switching into tech, working hands-on with Linux and learning DevOps, automation, backend engineering, and machine learning / AI."
+  />
 
-  <meta property="og:title" content="Nana Eddie — Linux & DevOps in Progress" />
-  <meta property="og:description" content="Switching into tech, learning Linux, automation, and backend engineering in public." />
+  <meta property="og:title" content="nana@eddie:~ — linux & devops in progress" />
+  <meta
+    property="og:description"
+    content="Switching into tech — learning Linux, automation, backend, and machine learning / AI in public."
+  />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://redhateddie.github.io" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230f172a'/%3E%3Cpath d='M14 22 L26 32 L14 42' stroke='%2338bdf8' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cline x1='30' y1='44' x2='50' y2='44' stroke='%2338bdf8' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230d1117'/%3E%3Cpath d='M14 22 L26 32 L14 42' stroke='%2356d364' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cline x1='30' y1='44' x2='50' y2='44' stroke='%2356d364' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E"
+  />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
-  <header class="hero">
-    <h1>Hey, I'm Nana Eddie.</h1>
-    <p class="tagline">Switching into tech — building real Linux skills, automating things, and learning in public.</p>
-  </header>
+  <main class="terminal" aria-label="Personal site of Nana Eddie">
+    <header class="titlebar">
+      <span class="dot dot-red" aria-hidden="true"></span>
+      <span class="dot dot-yellow" aria-hidden="true"></span>
+      <span class="dot dot-green" aria-hidden="true"></span>
+      <span class="title">nana@eddie: ~</span>
+    </header>
 
-  <main>
-    <section class="about">
-      <h2>About</h2>
-      <p>I'm working full-time in another field while I pivot into tech. The path I'm taking is hands-on: I spend a lot of time at the Linux command line, breaking and fixing things, writing small scripts, and figuring out how systems actually work under the hood.</p>
-      <p>I'd rather ship one small thing every week than spend a year on tutorials. This site is the start of that habit.</p>
-    </section>
+    <div class="screen">
+      <section>
+        <div class="cmd">
+          <span class="prompt">nana@eddie:~$</span>
+          <span class="cmd-text">whoami</span>
+        </div>
+        <div class="output">
+          <h1 class="big">Nana Eddie</h1>
+          <p class="muted">linux &middot; automation &middot; backend &middot; ml/ai &mdash; in progress</p>
+        </div>
+      </section>
 
-    <section class="now">
-      <h2>Now</h2>
-      <ul class="now-list">
-        <li><strong>Linux / Red Hat</strong> — daily driver, getting comfortable with the shell, file systems, and services.</li>
-        <li><strong>Automation</strong> — writing Bash and Python scripts to replace anything I do twice.</li>
-        <li><strong>Backend &amp; APIs</strong> — next up, learning how servers actually answer requests.</li>
-        <li><strong>Git / GitHub</strong> — committing and pushing as I go (this site is my first repo).</li>
-      </ul>
-    </section>
+      <section>
+        <div class="cmd">
+          <span class="prompt">$</span>
+          <span class="cmd-text">cat about.txt</span>
+        </div>
+        <div class="output">
+          <p>
+            Working full-time in another field while pivoting into tech.
+            My path is hands-on: a lot of time at the Linux command line,
+            breaking and fixing things, writing small scripts, and figuring
+            out how systems actually work under the hood.
+          </p>
+          <p>
+            I'd rather ship one small thing every week than spend a year
+            on tutorials. This site is the start of that habit.
+          </p>
+        </div>
+      </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <ul class="project-list">
-        <li><strong>This site</strong> — a hand-written HTML/CSS homepage, deployed for free with GitHub Pages. <a href="https://github.com/Redhateddie/redhateddie.github.io">Source on GitHub &rarr;</a></li>
-        <li><strong>Linux Cheatsheet</strong> — a growing reference of Linux commands I am learning. <a href="https://github.com/Redhateddie/Linux-cheatsheet">Source on GitHub &rarr;</a></li>
-      </ul>
-    </section>
+      <section>
+        <div class="cmd">
+          <span class="prompt">$</span>
+          <span class="cmd-text">ls -l now/</span>
+        </div>
+        <div class="output">
+          <ul class="ls">
+            <li>
+              <span class="perm">drwxr-xr-x</span>
+              <span class="entry">linux/red-hat</span>
+              <span class="note">daily driver</span>
+            </li>
+            <li>
+              <span class="perm">drwxr-xr-x</span>
+              <span class="entry">automation</span>
+              <span class="note">bash + python</span>
+            </li>
+            <li>
+              <span class="perm">drwxr-xr-x</span>
+              <span class="entry">backend-apis</span>
+              <span class="note">up next</span>
+            </li>
+                        <li>
+              <span class="perm">drwxr-xr-x</span>
+              <span class="entry">ml-and-ai</span>
+              <span class="note">exploring &mdash; models &amp; foundations</span>
+            </li>
+            <li>
+              <span class="perm">drwxr-xr-x</span>
+              <span class="entry">git-github</span>
+              <span class="note">active</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="contact">
-      <h2>Find me</h2>
-      <ul class="links">
-        <li><a href="https://github.com/Redhateddie">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/eddie-coleman-79997238a/">LinkedIn</a></li>
-        <li><a href="mailto:nanaeddie9@gmail.com">Email</a></li>
-      </ul>
-    </section>
+      <section>
+        <div class="cmd">
+          <span class="prompt">$</span>
+          <span class="cmd-text">ls -l projects/</span>
+        </div>
+        <div class="output">
+          <ul class="ls">
+            <li>
+              <span class="perm">-rw-r--r--</span>
+              <a class="entry link" href="https://github.com/Redhateddie/redhateddie.github.io">redhateddie.github.io</a>
+              <span class="note">this site</span>
+            </li>
+            <li>
+              <span class="perm">-rw-r--r--</span>
+              <a class="entry link" href="https://github.com/Redhateddie/Linux-cheatsheet">Linux-cheatsheet</a>
+              <span class="note">growing reference</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="cmd">
+          <span class="prompt">$</span>
+          <span class="cmd-text">contact --help</span>
+        </div>
+        <div class="output">
+          <ul class="ls">
+            <li>
+              <span class="flag">--github</span>
+              <a class="entry link" href="https://github.com/Redhateddie">github.com/Redhateddie</a>
+            </li>
+            <li>
+              <span class="flag">--linkedin</span>
+              <a class="entry link" href="https://www.linkedin.com/in/eddie-coleman-79997238a/">linkedin.com/in/eddie-coleman</a>
+            </li>
+            <li>
+              <span class="flag">--email</span>
+              <a class="entry link" href="mailto:nanaeddie9@gmail.com">nanaeddie9@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="cmd cursor-line">
+        <span class="prompt">$</span>
+        <span class="cursor" aria-hidden="true"></span>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Nana Eddie. Built from scratch.</p>
+    &copy; <span id="year"></span> Nana Eddie &middot; built from scratch
   </footer>
 
   <script>
