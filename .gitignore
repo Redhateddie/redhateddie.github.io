@@ -1,0 +1,22 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and local artifacts
+*.log
+node_modules/
+.cache/
+dist/
+build/
+
+# Env files (never commit secrets!)
+.env
+.env.local

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nana Eddie — Builder in Progress</title>
+  <meta name="description" content="Personal site of Nana Eddie (Redhateddie) — learning to build on the web." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Hey, I'm Nana Eddie.</h1>
+    <p class="tagline">Learning to build things on the web — one commit at a time.</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        I'm getting started with code, focused on websites and useful little
+        automation scripts. This page is my first real project — and it's also
+        my first repo on GitHub.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>
+          <strong>This site</strong> — a hand-written HTML/CSS homepage,
+          deployed for free with GitHub Pages.
+        </li>
+        <li class="placeholder">More coming soon.</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Find me</h2>
+      <ul class="links">
+        <li><a href="https://github.com/Redhateddie">GitHub</a></li>
+        <li><a href="mailto:nanaeddie9@gmail.com">Email</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nana Eddie. Built from scratch.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
